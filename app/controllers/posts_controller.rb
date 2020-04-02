@@ -13,5 +13,5 @@ class PostsController < ApplicationController
 
   # add create method here
   def create
-    @post = Post.new()
+    @post = Post.new(params)
 end
