@@ -13,6 +13,6 @@ class PostsController < ApplicationController
 
   # add create method here
   def create
-    @post = Post.create(title: params[:title], description: params[:description])
+    Post.create(title: params[:title], description: params[:description])
     @post.save 
 end
